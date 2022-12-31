@@ -1,3 +1,8 @@
+*{
+   padding:0;
+   margin:0;
+}
+
 body {
     --color-primary: #004195;
     --color-primary-dark: #31407d;
@@ -8,27 +13,36 @@ body {
 
     margin: 0;
     height: 100vh;
-    display: flex;
+    display: flexbox;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+    
+justify-content: center;
     font-size: 18px;
-    background: url(./dd.jpg);
+    background: url(dd3.jpeg);
     background-size: cover;
+    
 }
 
-.container {
-    width: 400px;
+.container1 {
+    width: 400rem;
+
     max-width: 400px;
-    margin: 1rem;
-    padding: 2rem;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    padding:2rem;
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
     background: white ;
 }
 
-.container,
+.container1,
 .form__input,
 .form__button {
+    
     font: 500 1rem 'Quicksand', sans-serif;
 }
 
@@ -49,7 +63,7 @@ body {
     text-align: center;
     color : #004195 ;
     font-family :'Times New Roman', Times, serif ;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .form__message {
@@ -120,14 +134,58 @@ body {
 
 .form__text {
     text-align: center;
+    padding-top: 1rem;
+}
+
+.form__text1 {
+    text-align: center;
+    padding-top: 0.5rem;
 }
 
 .form__link {
     color: var(--color-secondary);
     text-decoration: none;
+    
     cursor: pointer;
 }
 
 .form__link:hover {
     text-decoration: underline;
 }
+
+nav{
+    background-color: aliceblue;
+    margin-block: 10px;
+    display:flex;
+    justify-content: flex-start;
+    float: inline-start;
+}
+
+.logo-image
+{
+    height: 2rem;
+    width: 10rem;
+}
+
+#footer
+{
+    color: white;
+    padding: 2% 7%;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.social-media
+{
+    margin: 2% 1%;
+}
+
+@media (max-width: 600px) {
+    .container {
+      padding: 10px;
+      
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
